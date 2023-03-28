@@ -3,7 +3,7 @@
 \docType{data}
 \name{usarwb}
 \alias{usarwb}
-\title{Real Wage Bundle, USA 2014}
+\title{Real Wage Bundle, USA}
 \format{
 Consumption expenditure on the output of 53 industries.
 }

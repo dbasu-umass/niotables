@@ -1,6 +1,6 @@
-#' USA IO Table 2014
+#' USA IO Table
 #'
-#' Input Output Table for the US economy in 2014.
+#' Input Output Table for the US economy from the World Input Output Database.
 #'
 #' @source <https://doi.org/10.34894/PJ2M1C>
 #' @format Input Output table for 53 industries.

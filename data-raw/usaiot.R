@@ -10,8 +10,7 @@ usaiot <- read_excel(
   sheet = "National IO-tables"
 ) %>%
   dplyr::filter(
-    Origin=="Domestic",
-    Year==2014
+    Origin=="Domestic"
   ) %>%
   dplyr::select(
     -c("Description","Origin",

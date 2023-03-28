@@ -5,7 +5,7 @@
 \alias{sea}
 \title{Socio Economic Accounts}
 \format{
-A panel data set (43 countries, 15 years: 2000-2014)
+A panel data set (5 countries, 15 years: 2000-2014). The countries are Canada (CAN), France (FRA), Germany (DEU), Great Britain (GBR) and United State of America (USA).
 \describe{
 \item{country}{Country code.}
 \item{code}{Industry code.}

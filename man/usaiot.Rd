@@ -3,7 +3,7 @@
 \docType{data}
 \name{usaiot}
 \alias{usaiot}
-\title{USA IO Table 2014}
+\title{USA IO Table}
 \format{
 Input Output table for 53 industries.
 }
@@ -14,7 +14,7 @@ Input Output table for 53 industries.
 usaiot
 }
 \description{
-Input Output Table for the US economy in 2014.
+Input Output Table for the US economy from the World Input Output Database.
 }
 \examples{
 data(usaiot)

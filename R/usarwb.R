@@ -1,4 +1,4 @@
-#' Real Wage Bundle, USA 2014
+#' Real Wage Bundle, USA
 #'
 #' Personal Consumption Expenditure from the Input Output Table for the US economy in 2014. This data is used to construct the real wage bundle for computing the price of production vector.
 #'

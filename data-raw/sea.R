@@ -32,7 +32,18 @@ d1_2 <- readxl::read_excel(
   as.data.frame()
 
 # ------- Merge the two data sets
-sea <- left_join(d1_1, d1_2, by = c("country", "year"))
+d1_3 <- left_join(d1_1, d1_2, by = c("country", "year"))
+
+# ---- Keep data for 5 countries
+sea <- d1_3 %>%
+  dplyr::filter(
+    country=="CAN"|country=="FRA"|country=="DEU"|
+      country=="GBR"|country=="USA"
+  ) %>%
+  as.data.frame()
+
 remove(d1_1)
 remove(d1_2)
+remove(d1_3)
+
 save(sea, file = "data/sea.rda", compress = "xz")
