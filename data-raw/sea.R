@@ -8,7 +8,7 @@ library(readr)
 d1_1 <- readxl::read_excel(
   path="~/MyRProjects/niotables/data-raw/WIOD_SEA_Nov16.xlsx",
   sheet = "DATA"
-) %>% 
+) %>%
   dplyr::select(-description) %>%
   pivot_longer(
     !c("country", "variable", "code"),
@@ -33,6 +33,6 @@ d1_2 <- readxl::read_excel(
 
 # ------- Merge the two data sets
 sea <- left_join(d1_1, d1_2, by = c("country", "year"))
-
-write_csv(sea, "data-raw/sea.csv")
-save(sea, file = "data/sea.rda")
+remove(d1_1)
+remove(d1_2)
+save(sea, file = "data/sea.rda", compress = "xz")

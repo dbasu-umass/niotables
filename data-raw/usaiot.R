@@ -8,9 +8,10 @@ library(readr)
 usaiot <- read_excel(
   path="~/MyRProjects/niotables/data-raw/USA_NIOT_nov16.xlsx",
   sheet = "National IO-tables"
-) %>% 
+) %>%
   dplyr::filter(
-    Origin=="Domestic"
+    Origin=="Domestic",
+    Year==2014
   ) %>%
   dplyr::select(
     -c("Description","Origin",
@@ -18,4 +19,4 @@ usaiot <- read_excel(
   ) %>%
   as.data.frame()
 
-save(sea, file = "data/usaiot.rda")
+save(usaiot, file = "data/usaiot.rda", compress = "xz")
