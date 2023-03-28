@@ -1,1 +1,4 @@
 ^data-raw$
+^niotables\.Rproj$
+^\.Rproj\.user$
+^LICENSE\.md$

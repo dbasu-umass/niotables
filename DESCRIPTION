@@ -1,0 +1,11 @@
+Package: niotables
+Title: National Input Output Tables
+Version: 0.0.0.9000
+Authors@R: 
+    person("Deepankar", "Basu", , "first.last@example.com", role = c("aut", "cre"))
+Description: The package provides national input output tables from the 2016 release of the World Input Output Database.
+License: MIT + file LICENSE
+LazyData: true
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.3
