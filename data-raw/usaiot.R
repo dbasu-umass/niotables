@@ -18,5 +18,4 @@ usaiot <- read_excel(
   ) %>%
   as.data.frame()
 
-write_csv(usaiot, "data-raw/usaiot.csv")
 save(sea, file = "data/usaiot.rda")
